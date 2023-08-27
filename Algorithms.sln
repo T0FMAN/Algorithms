@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "what a hell", "what a hell\what a hell.csproj", "{654FC77E-2B6F-47CB-BEF9-2890EFC37714}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{3E90E447-304A-438D-82FE-EFD1C0AEFF36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{654FC77E-2B6F-47CB-BEF9-2890EFC37714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{654FC77E-2B6F-47CB-BEF9-2890EFC37714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{654FC77E-2B6F-47CB-BEF9-2890EFC37714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{654FC77E-2B6F-47CB-BEF9-2890EFC37714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E90E447-304A-438D-82FE-EFD1C0AEFF36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E90E447-304A-438D-82FE-EFD1C0AEFF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E90E447-304A-438D-82FE-EFD1C0AEFF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E90E447-304A-438D-82FE-EFD1C0AEFF36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45D331E4-CF8D-4100-8764-58D992324EE6}
+	EndGlobalSection
+EndGlobal
