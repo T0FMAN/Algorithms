@@ -3,4 +3,5 @@
 //var binarySearch = new BinarySearch();
 //var selectionSort = new SelectionSort();
 //var recursion = new Recursion();
-//var fastSort = new FastSort();
+var quickSort = new QuickSort();
+

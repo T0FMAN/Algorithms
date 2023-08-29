@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Algorithms.Algorithms
 {
-    //O(n*n)
+    //O(n²)
     public class SelectionSort
     {
         public SelectionSort() 
         {
             var array = new List<int>() { 5, 3, 6, 2, 10 };
 
-            var sorted = SortSelection(array);
+            var sorted = Sort(array);
 
             Console.WriteLine(string.Join(", ", sorted));
         }
@@ -34,7 +34,7 @@ namespace Algorithms.Algorithms
             return smallestIndex;
         }
 
-        private static int[] SortSelection(List<int> array)
+        private static int[] Sort(List<int> array)
         {
             var result = new int[array.Count];
             
