@@ -10,13 +10,11 @@ namespace Algorithms.Algorithms
     //O(n*logₙ)
     public class QuickSort
     {
+        Random _random;
         public QuickSort() 
         {
-            var rand = new Random();
-            var list = new List<int>();
-
-            for (int i = 0; i < 5; i++)
-                list.Add(rand.Next(10, 100));
+            _random = new Random();
+            var list = new List<int>() { 60, 2, 12, 44, 39, 6 };
 
             Sort(list, true).ForEach(x => Console.WriteLine(x));
         } 
@@ -27,30 +25,17 @@ namespace Algorithms.Algorithms
                 return list;
             else
             {
-                var upper = new List<int>();
-                var lower = new List<int>();
+                int set;
 
-                var set = new List<int>();
+                if (isMiddleCase) // Middle case: random element or middle of array
+                    set = list[_random.Next(0, list.Count)];
+                else // Worst case: Support element = firts element
+                    set = list.First();
 
-                if (isMiddleCase)
-                {
-                    var rand = new Random();
-                    set.Add(list[rand.Next(0, list.Count)]); // Middle case: random element or middle of array
-                }
-                else
-                    set.Add(list[0]); // Worst case: Support element = firts element
+                var upper = list.Where(x => x >= set).ToList();
+                var lower = list.Where(x => x < set).ToList();
 
-                list.Remove(set[0]);
-
-                foreach (var x in list)
-                {
-                    if (x >= set[0])
-                        upper.Add(x);
-                    else
-                        lower.Add(x);
-                }
-
-                return Sort(lower, isMiddleCase).Union(set).Union(Sort(upper, isMiddleCase)).ToList();
+                return Sort(lower, isMiddleCase).Union(new List<int>{set}).Union(Sort(upper, isMiddleCase)).ToList();
             }
         }
     }
